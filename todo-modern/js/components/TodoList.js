@@ -11,7 +11,7 @@
  */
 
 import MarkAllTodosMutation from '../mutations/MarkAllTodosMutation';
-import Todo from './Todo';
+import MyDearTodoItem from './MyDearTodoItem';
 
 import React from 'react';
 import {
@@ -70,14 +70,14 @@ export default createFragmentContainer(TodoList, {
           node {
             id,
             complete,
-            ...Todo_todo,
+            ...MyDearTodoItem_todo,
           },
         },
       },
       id,
       totalCount,
       completedCount,
-      ...Todo_viewer,
+      ...MyDearTodoItem_viewer,
     }
   `,
 });

@@ -108,14 +108,14 @@ class Todo extends React.Component {
 
 export default createFragmentContainer(Todo, {
   todo: graphql`
-    fragment Todo_todo on Todo {
+    fragment MyDearTodoItem_todo on Todo {
       complete,
       id,
       text,
     }
   `,
   viewer: graphql`
-    fragment Todo_viewer on User {
+    fragment MyDearTodoItem_viewer on User {
       id,
       totalCount,
       completedCount,
